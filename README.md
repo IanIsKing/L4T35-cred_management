@@ -25,7 +25,7 @@ Cool Tech Credential Manager is a web application designed to securely manage an
 1. Clone the repository to your local machine:
 
    ```
-   git clone https://github.com/your-username/cool-tech-credential-manager.git
+   git clone https://github.com/IanIsKing/L4T35-cred_management.git
    ```
 
 2. Navigate to the project directory:
