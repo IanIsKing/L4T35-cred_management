@@ -1,0 +1,206 @@
+/* There is only one main styling page for the application */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+/* Logo styling to give the logo some hieght */
+.logo {
+  filter: drop-shadow(0 0 0.75rem #000);
+  opacity: 0.8;
+  transition: opacity 0.5s;
+  border-radius: 10%;
+}
+
+/* Flash animation if an avatar is not select */
+@keyframes flashAnimation {
+  0%,
+  100% {
+    opacity: 1;
+    scale: 1.2;
+  }
+  50% {
+    opacity: 0.5;
+    scale: 1;
+  }
+}
+
+.flashEffect {
+  animation: flashAnimation 1s infinite;
+}
+
+.error {
+  color: red;
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.input {
+  margin: 5% 0;
+}
+
+.avatarSelector {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.avatarSelector:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.userSettings {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.selection-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  border: 1px solid #ccc; /* Border for the selection box */
+  border-radius: 5px; /* Rounded corners for the selection box */
+  background-color: #f9f9f9; /* Light background for the selection box */
+  max-width: 100%;
+}
+
+.selection-tag {
+  padding: 4px 4px;
+  margin: 2px;
+  border-radius: 8px; /* Rounded corners for the tags */
+  background-color: #1d8aff; /* Background color for the tags */
+  color: white; /* Text color for the tags */
+  font-size: 12px; /* Font size for the tags */
+  white-space: nowrap; /* Prevents the text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis to overflow text */
+  display: flex;
+  align-items: center;
+}
+
+.selection-tag .remove-tag {
+  margin-left: 8px;
+  cursor: pointer;
+  background-color: #0056b3; /* Darker background color for the remove button */
+  border-radius: 50%; /* Circular button */
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.circle-icon-ou {
+  background-color: #a0f1fc; /* Circle color */
+  border-radius: 50%; /* Makes the background circular */
+  display: inline-flex; /* Keeps the icon centered within the circle */
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  padding: 10px; /* Adjust the size of the circle */
+  color: rgb(77, 77, 78); /* Icon color */
+  margin-right: 12px; /* Spacing between the icon and the text */
+}
+
+.circle-icon-div {
+  background-color: #c8ff70; /* Circle color */
+  border-radius: 50%; /* Makes the background circular */
+  display: inline-flex; /* Keeps the icon centered within the circle */
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  padding: 10px; /* Adjust the size of the circle */
+  color: rgb(77, 77, 78); /* Icon color */
+  margin-right: 12px; /* Spacing between the icon and the text */
+}
+
+.circle-icon-div2 {
+  background-color: #c8ff70; /* Circle color */
+  border-radius: 50%; /* Makes the background circular */
+  display: inline-flex; /* Keeps the icon centered within the circle */
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  padding: 8px; /* Adjust the size of the circle */
+  color: rgb(77, 77, 78); /* Icon color */
+  margin-right: 6px; /* Spacing between the icon and the text */
+}
+
+.circle-icon-repo {
+  background-color: #ffa470; /* Circle color */
+  border-radius: 50%; /* Makes the background circular */
+  display: inline-flex; /* Keeps the icon centered within the circle */
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  padding: 10px; /* Adjust the size of the circle */
+  color: rgb(77, 77, 78); /* Icon color */
+  margin-right: 12px; /* Spacing between the icon and the text */
+}
+
+.circle-icon-repo2 {
+  background-color: #ffa470; /* Circle color */
+  border-radius: 50%; /* Makes the background circular */
+  display: inline-flex; /* Keeps the icon centered within the circle */
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  padding: 8px; /* Adjust the size of the circle */
+  color: rgb(77, 77, 78); /* Icon color */
+  margin-right: 6px; /* Spacing between the icon and the text */
+}
+
+.circle-icon-detail2 {
+  background-color: #ff84b3; /* Circle color */
+  border-radius: 50%; /* Makes the background circular */
+  display: inline-flex; /* Keeps the icon centered within the circle */
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  padding: 8px; /* Adjust the size of the circle */
+  color: rgb(77, 77, 78); /* Icon color */
+  margin-right: 6px; /* Spacing between the icon and the text */
+}
+
+.addButton {
+  position: fixed; /* Changed from absolute to fixed */
+  bottom: 10%;
+  right: 15%;
+  background-color: #eaa3fc; /* Circle color */
+  border-radius: 50%; /* Makes the background circular */
+  display: inline-flex; /* Keeps the icon centered within the circle */
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  padding: 10px; /* Adjust the size of the circle */
+  color: rgb(77, 77, 78); /* Icon color */
+  margin-right: 12px; /* Spacing between the icon and the text */
+  cursor: pointer;
+}
+
+.AddRepo {
+  background-color: #eaa3fc; /* Circle color */
+  border-radius: 50%; /* Makes the background circular */
+  padding: 8px; /* Adjust the size of the circle */
+  color: rgb(77, 77, 78); /* Icon color */
+  cursor: pointer;
+  scale: 0.7;
+}
