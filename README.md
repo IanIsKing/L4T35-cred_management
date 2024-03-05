@@ -14,6 +14,29 @@ Cool Tech Credential Manager is a web application designed to securely manage an
 
 ## Getting Started
 
+For instalation guide see below.
+
+### Instructions,
+
+Creating a new Credential Repository, Division, Organisational units. Only Admin has access to creating this.
+
+1. Start by adding a Credential Repositories by clicking on the purple plus, bottom right corner of the screen.
+2. Add repositories name and description.
+3. Add however many Credentials you require.
+4. Save.
+5. Add a division and select the Credential Repository you just created to link it.
+6. Add an OU and select the Division you just created to link it.
+
+New user.
+
+1. User should register.
+2. The user will only be able to view Credential Repositories and add Credentials to it.
+3. Admin can grant more permissions to users.
+   Admin
+4. Admin can change user permissions and link them to Ous, Divisions and Credential repositories.
+5. Go to user page and select the user to Edit.
+6. Change or add access, click save.
+
 ### Prerequisites
 
 - Node.js
